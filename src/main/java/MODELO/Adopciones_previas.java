@@ -55,9 +55,5 @@ public class Adopciones_previas extends Object{
     public void setAdp_fecha(Timestamp adp_fecha) {
         this.adp_fecha = adp_fecha;
     }
-    
-    
-    
-    
-   
+  
 }

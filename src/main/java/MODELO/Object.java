@@ -3,8 +3,6 @@ package MODELO;
 
 public class Object {
     
-     
-    
     private int id = -1;
 
     public Object() {
@@ -21,7 +19,5 @@ public class Object {
     public void setId(int id) {
         this.id = id;
     } 
-
-    
-       
+      
 }
