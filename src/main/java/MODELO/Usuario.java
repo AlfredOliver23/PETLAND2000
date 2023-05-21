@@ -1,86 +1,73 @@
 package MODELO;
 
-import java.sql.Timestamp;
-
 public class Usuario extends Object {
-    
-   private long per_img;
-   private int usu_id;
-   private int  log_id;
-   private char usu_RFC;
-   private char usu_nombre;
-   private char usu_apapt;
-   private boolean usu_admin; 
+   private int id;
+   private String RFC;
+   private String nombre;
+   private String apapt;
+   private String apmat;
+   private int  dom_id;
+   private int tel;
+   private int admin;
+   private long img;
+   private String cor;
+   private String pass;
 
-    public Usuario(long per_img, int usu_id, int log_id, char usu_RFC, char usu_nombre, char usu_apapt, boolean usu_admin) {
-        this.per_img = per_img;
-        this.usu_id = usu_id;
-        this.log_id = log_id;
-        this.usu_RFC = usu_RFC;
-        this.usu_nombre = usu_nombre;
-        this.usu_apapt = usu_apapt;
-        this.usu_admin = usu_admin;
-    }
-
-    public Usuario(long per_img, int usu_id, int log_id, char usu_RFC, char usu_nombre, char usu_apapt, boolean usu_admin, int id) {
+    public Usuario(int id, String RFC, String nombre, String apapt, String apmat, int dom_id, int tel, int admin, long img, String cor, String pass) {
         super(id);
-        this.per_img = per_img;
-        this.usu_id = usu_id;
-        this.log_id = log_id;
-        this.usu_RFC = usu_RFC;
-        this.usu_nombre = usu_nombre;
-        this.usu_apapt = usu_apapt;
-        this.usu_admin = usu_admin;
+        this.RFC = RFC;
+        this.nombre = nombre;
+        this.apapt = apapt;
+        this.apmat = apmat;
+        this.dom_id = dom_id;
+        this.tel = tel;
+        this.admin = admin;
+        this.img = img;
+        this.cor = cor;
+        this.pass = pass;
     }
 
-    public Usuario(int usu_id, int log_id, char usu_RFC, char usu_nombre, char usu_apapt, boolean usu_admin) {
-        this.usu_id = usu_id;
-        this.log_id = log_id;
-        this.usu_RFC = usu_RFC;
-        this.usu_nombre = usu_nombre;
-        this.usu_apapt = usu_apapt;
-        this.usu_admin = usu_admin;
+    public Usuario(String RFC, String nombre, String apapt, String apmat, int dom_id, int tel, int admin, long img, String cor, String pass, int id) {
+        super();
+        this.RFC = RFC;
+        this.nombre = nombre;
+        this.apapt = apapt;
+        this.apmat = apmat;
+        this.dom_id = dom_id;
+        this.tel = tel;
+        this.admin = admin;
+        this.img = img;
+        this.cor = cor;
+        this.pass = pass;
     }
 
-    public Usuario(int usu_id, int log_id, char usu_RFC, char usu_nombre, char usu_apapt, boolean usu_admin, int id) {
-        super(id);
-        this.usu_id = usu_id;
-        this.log_id = log_id;
-        this.usu_RFC = usu_RFC;
-        this.usu_nombre = usu_nombre;
-        this.usu_apapt = usu_apapt;
-        this.usu_admin = usu_admin;
+    public Usuario( String RFC, String nombre, String apapt, String apmat, int dom_id, int tel, int admin, String cor, String pass) {
+        super();
+        this.RFC = RFC;
+        this.nombre = nombre;
+        this.apapt = apapt;
+        this.apmat = apmat;
+        this.dom_id =dom_id;
+        this.tel = tel;
+        this.admin = admin;
+        this.cor = cor;
+        this.pass = pass;
     }
 
-    public int getUsuId() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public Usuario( String RFC, String nombre, String apapt, String apmat, int dom_id, int tel, long img,String cor, String pass) {
+        super();
+        
+        this.RFC = RFC;
+        this.img = img;
+        this.nombre = nombre;
+        this.apapt = apapt;
+        this.apmat = apmat;
+        this.dom_id = dom_id;
+        this.tel = tel;
+        this.cor = cor;
+        this.pass = pass;
     }
 
-    public String getUsuRFC() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getUsuNombre() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getUsuAppat() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getUsuApmat() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getUsuTel() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void setUsuId(int idUsuario) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-   
     
     
     
@@ -90,5 +77,109 @@ public class Usuario extends Object {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getRFC() {
+        return RFC;
+    }
+
+    public void setRFC(String RFC) {
+        this.RFC = RFC;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApapt() {
+        return apapt;
+    }
+
+    public void setApapt(String apapt) {
+        this.apapt = apapt;
+    }
+
+    public String getApmat() {
+        return apmat;
+    }
+
+    public void setApmat(String apmat) {
+        this.apmat = apmat;
+    }
+
+    public int getDom_id() {
+        return dom_id;
+    }
+
+    public void setDom_id(int dom_id) {
+        this.dom_id = dom_id;
+    }
+
+    public int getTel() {
+        return tel;
+    }
+
+    public void setTel(int tel) {
+        this.tel = tel;
+    }
+
+    public int getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(int admin) {
+        this.admin = admin;
+    }
+
+    public long getImg() {
+        return img;
+    }
+
+    public void setImg(long img) {
+        this.img = img;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public String getPass() {
+        return pass;
+    }
+
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
+
 
 }

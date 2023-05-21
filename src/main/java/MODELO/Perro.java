@@ -14,6 +14,7 @@ public class Perro  extends Object {
   private boolean per_cumpliste;
 
     public Perro(int per_id, char per_nom, int cra_id, int tpd_id, Timestamp per_cum, int ref_id, long per_img, int orp_id, char per_des, boolean per_cumpliste) {
+        super();
         this.per_id = per_id;
         this.per_nom = per_nom;
         this.cra_id = cra_id;
@@ -39,4 +40,25 @@ public class Perro  extends Object {
         this.per_des = per_des;
         this.per_cumpliste = per_cumpliste;
     }   
+
+    public Perro(int per_id) {
+        this.per_id = per_id;
+    }
+
+    public Perro(int per_id, int id) {
+        super(id);
+        this.per_id = per_id;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
