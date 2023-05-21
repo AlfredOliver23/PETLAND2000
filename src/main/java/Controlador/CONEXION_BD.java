@@ -15,10 +15,10 @@ public class CONEXION_BD {
         if(conexion == null){
             try{
                 String url = context.getInitParameter("http//localhost"); 
-                String user = context.getInitParameter("rute");
-                String passwore = context.getInitParameter("123456789");
+                String user = context.getInitParameter("root");
+                String password = context.getInitParameter("123456789");
                 Class.forName("con.mysql.cj.jdbc.Driver");
-                conexion = DriverManager.getConnection(url, user, passwore); 
+                conexion = DriverManager.getConnection(url, user, password);
                 
             }catch(SQLException | ClassNotFoundException ex  ){
              

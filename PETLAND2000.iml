@@ -14,7 +14,9 @@
     <facet type="jpa" name="JPA">
       <configuration>
         <setting name="validation-enabled" value="true" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="PETLAND2000" />
+        </datasource-mapping>
         <naming-strategy-map />
       </configuration>
     </facet>
@@ -29,5 +31,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-web-api:7.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
+    <orderEntry type="library" name="Maven: com.mysql:mysql-connector-j:8.0.32" level="project" />
+    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.21.9" level="project" />
   </component>
 </module>
