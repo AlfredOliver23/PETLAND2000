@@ -10,8 +10,6 @@
 </head>
 <body>
 
-
-
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Petland</a>
@@ -21,7 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="Controlador?accion=home">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.jsp">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Controlador?accion=home">Adopta</a>
@@ -156,10 +154,12 @@
             x:500,
         })
     </script>
+    
+    
 </section>
 
 
-
+<!--botstrapcito-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 
