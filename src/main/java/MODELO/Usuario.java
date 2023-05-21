@@ -66,32 +66,7 @@ public class Usuario extends Object {
         this.tel = tel;
         this.cor = cor;
         this.pass = pass;
-    }
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    } 
     
     public int getId() {
         return id;
@@ -180,6 +155,5 @@ public class Usuario extends Object {
     public void setPass(String pass) {
         this.pass = pass;
     }
-
 
 }

@@ -8,7 +8,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.ServletContext;
-
 import MODELO.Domicilio.*;
 import MODELO.Usuario;
 
@@ -156,11 +155,8 @@ public class Usuario_DAO {
                     rs.getString("usu_cor"),
                     rs.getString("usu_pass")
             );
-
             return usuario;
         }
-
-        
         return null;     
 
 }
@@ -172,7 +168,6 @@ public class Usuario_DAO {
         return true;
 
     }
-        
         
     //para verificar el usuario 
     public Usuario login(Usuario usuario) throws SQLException {
@@ -200,21 +195,10 @@ public class Usuario_DAO {
             );
             
             return usuarioLogin;
-            
         }  
-        
-        
-        
-        
-        
-        
-        
-        
         return null;
         
     }
-    
-    
     
 }
       
