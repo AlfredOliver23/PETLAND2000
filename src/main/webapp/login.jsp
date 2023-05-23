@@ -92,7 +92,7 @@
             </form>
 
             
-            <form action="" class="formulario_register">
+            <form method="post" action="CLoginControl" class="formulario_register">
                 <h2>Registrarse</h2>
                 <input type="text" id="rfc" placeholder="RFC">                
                 <input type="text" id="nombre" placeholder="Nombres">
@@ -102,12 +102,25 @@
                 <input type="text" id="correo" placeholder="Correo Electronico">
                 <input type="password" id="contrasena" placeholder="Contrasena">
                 <br> <br>
-                    <button type="submit">Registrarme</button>
+                    <button type="submit" value="guardar">Registrarme</button>
 </form> 
 
         </div>
     </div>
 </main>
+    
+<footer>
+    <h2>Contacto</h2>
+    <br>
+    <p>Si tienes alguna pregunta o duda sobre el proceso de adopción, no dudes en contactarnos. Estamos aquí para ayudarte a encontrar el compañero perfecto para ti y tu familia.</p>
+    <br>
+    <br>
+    <a href="contacto.html" class="button">Contáctanos</a>
+    <br>
+    <br>
+    <br>
+    <p class="copy">&copy; 2023 Petland. Todos los derechos reservados</p>
+</footer>
 
 <script src="./js/verilogin.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>

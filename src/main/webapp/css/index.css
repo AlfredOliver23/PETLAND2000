@@ -1,8 +1,12 @@
 body{
     overflow-x: hidden;
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
-
+section{
+    position:relative;
+    background-color: red;
+}
 .paralax{
     position: relative;
     display: flex;

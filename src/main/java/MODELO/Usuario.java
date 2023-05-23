@@ -7,13 +7,15 @@ public class Usuario extends Object {
    private String apapt;
    private String apmat;
    private int  dom_id;
-   private int tel;
+   private String tel;
    private int admin;
    private long img;
    private String cor;
    private String pass;
+   
+   
 
-    public Usuario(int id, String RFC, String nombre, String apapt, String apmat, int dom_id, int tel, int admin, long img, String cor, String pass) {
+    public Usuario(int id, String RFC, String nombre, String apapt, String apmat, int dom_id, String tel, int admin, long img, String cor, String pass) {
         super(id);
         this.RFC = RFC;
         this.nombre = nombre;
@@ -27,7 +29,7 @@ public class Usuario extends Object {
         this.pass = pass;
     }
 
-    public Usuario(String RFC, String nombre, String apapt, String apmat, int dom_id, int tel, int admin, long img, String cor, String pass, int id) {
+    public Usuario(String RFC, String nombre, String apapt, String apmat, int dom_id, String tel, int admin, long img, String cor, String pass, int id) {
         super();
         this.RFC = RFC;
         this.nombre = nombre;
@@ -41,7 +43,7 @@ public class Usuario extends Object {
         this.pass = pass;
     }
 
-    public Usuario( String RFC, String nombre, String apapt, String apmat, int dom_id, int tel, int admin, String cor, String pass) {
+    public Usuario( String RFC, String nombre, String apapt, String apmat, int dom_id, String tel, int admin, String cor, String pass) {
         super();
         this.RFC = RFC;
         this.nombre = nombre;
@@ -54,7 +56,7 @@ public class Usuario extends Object {
         this.pass = pass;
     }
 
-    public Usuario( String RFC, String nombre, String apapt, String apmat, int dom_id, int tel, long img,String cor, String pass) {
+    public Usuario( String RFC, String nombre, String apapt, String apmat, int dom_id, String tel, long img,String cor, String pass) {
         super();
         
         this.RFC = RFC;
@@ -66,7 +68,35 @@ public class Usuario extends Object {
         this.tel = tel;
         this.cor = cor;
         this.pass = pass;
-    } 
+    } /**
+     * Segun yo vamos a utilizar este
+     * 
+     * @param id
+     * @param RFC
+     * @param nombre
+     * @param apapt
+     * @param apmat
+     * @param tel
+     * @param cor
+     * @param pass 
+     */
+
+    public Usuario(int id,String RFC, String nombre, String apapt, String apmat, String tel, String cor, String pass) {
+        super();
+        this.id = id;
+        this.RFC = RFC;
+        this.nombre = nombre;
+        this.apapt = apapt;
+        this.apmat = apmat;
+        this.tel = tel;
+        this.cor = cor;
+        this.pass = pass;
+    }
+
+    public Usuario() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
     
     public int getId() {
         return id;
@@ -116,11 +146,11 @@ public class Usuario extends Object {
         this.dom_id = dom_id;
     }
 
-    public int getTel() {
+    public String getTel() {
         return tel;
     }
 
-    public void setTel(int tel) {
+    public void setTel(String tel) {
         this.tel = tel;
     }
 

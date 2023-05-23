@@ -1,0 +1,16 @@
+MODELO\Adopciones_previas.class
+MODELO\Domicilio.class
+MODELO\Refugio.class
+MODELO\Tipo_de_perro.class
+Controlador\CONEXION_BD.class
+MODELO\Consultas.class
+MODELO\Expediente_medico.class
+Controlador\SLoginControl.class
+MODELO\Cata_razas.class
+MODELO\Origen_perro.class
+MODELO\Object.class
+MODELO\Lista_espera.class
+Controlador\Usuario_DAO.class
+MODELO\Usuario.class
+MODELO\Perro.class
+MODELO\Seguimiento_perro.class

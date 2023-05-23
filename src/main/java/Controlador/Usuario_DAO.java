@@ -8,7 +8,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.ServletContext;
-import MODELO.Domicilio.*;
 import MODELO.Usuario;
 
 public class Usuario_DAO {
@@ -67,6 +66,15 @@ public class Usuario_DAO {
 
     }
 
+    /**
+     * Eson se creo
+     *
+     * @param conexion
+     */
+    Usuario_DAO(Connection conexion) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public Usuario save(Usuario usuario) throws Exception {
 
         if (usuario.getId() == -1) {
@@ -75,7 +83,7 @@ public class Usuario_DAO {
             this.insertStatement.setString(3, usuario.getApapt());
             this.insertStatement.setString(4, usuario.getApmat());
             this.insertStatement.setInt(5, usuario.getDom_id());
-            this.insertStatement.setInt(6, usuario.getTel());
+            this.insertStatement.setString(6, usuario.getTel());
             this.insertStatement.setInt(7, usuario.getAdmin());
             this.insertStatement.setString(8, usuario.getCor());
             this.insertStatement.setString(9, usuario.getPass());
@@ -88,13 +96,13 @@ public class Usuario_DAO {
             return usuario;
 
         } else {
-            //actualiar
+            //actualizar
             this.insertStatement.setString(1, usuario.getRFC());
             this.insertStatement.setString(2, usuario.getNombre());
             this.insertStatement.setString(3, usuario.getApapt());
             this.insertStatement.setString(4, usuario.getApmat());
             this.insertStatement.setInt(5, usuario.getDom_id());
-            this.insertStatement.setInt(6, usuario.getTel());
+            this.insertStatement.setString(6, usuario.getTel());
             this.insertStatement.setInt(7, usuario.getAdmin());
             this.insertStatement.setString(8, usuario.getCor());
             this.insertStatement.setString(9, usuario.getPass());
@@ -104,11 +112,8 @@ public class Usuario_DAO {
             return usuario;
 
         }
-       
-     
-    }  
 
-    
+    }
 
     public List<Usuario> getAll() throws Exception {
         List<Usuario> usuarioLista = new ArrayList<>();
@@ -123,7 +128,7 @@ public class Usuario_DAO {
                     rs.getString("usu_apapt"),
                     rs.getString("usu_apmat"),
                     rs.getInt("dom_id"),
-                    rs.getInt("usu_tel"),
+                    rs.getString("usu_tel"),
                     rs.getInt("usu_admin"),
                     rs.getLong("usu_img"),
                     rs.getString("usu_cor"),
@@ -149,7 +154,7 @@ public class Usuario_DAO {
                     rs.getString("usu_apapt"),
                     rs.getString("usu_apmat"),
                     rs.getInt("dom_id"),
-                    rs.getInt("usu_tel"),
+                    rs.getString("usu_tel"),
                     rs.getInt("usu_admin"),
                     rs.getLong("usu_img"),
                     rs.getString("usu_cor"),
@@ -157,29 +162,30 @@ public class Usuario_DAO {
             );
             return usuario;
         }
-        return null;     
+        return null;
 
-}
-     //metodo para borrar
-        public boolean delete(int Id) throws Exception {
+    }
+    //metodo para borrar
+
+    public boolean delete(int Id) throws Exception {
         this.deleteByIdStatement.setInt(1, Id);
         //aqui ejecuto la actualizacion para el borrado y debe devolver true o false
         this.deleteByIdStatement.executeUpdate();
         return true;
 
     }
-        
+
     //para verificar el usuario 
     public Usuario login(Usuario usuario) throws SQLException {
         this.selectLoginStatement.setString(1, usuario.getCor());
         ResultSet rs = this.selectLoginStatement.executeQuery();
-        
-       if(rs.next() && rs.getString("password")!=null){
+
+        if (rs.next() && rs.getString("password") != null) {
             usuario.getPass();
             rs.getString("usu_pass");
-            
+
             System.out.println("Funciona wiiii");
-            
+
             Usuario usuarioLogin = new Usuario(
                     rs.getInt("usu_id"),
                     rs.getString("usu_RFC"),
@@ -187,31 +193,17 @@ public class Usuario_DAO {
                     rs.getString("usu_apapt"),
                     rs.getString("usu_apmat"),
                     rs.getInt("dom_id"),
-                    rs.getInt("usu_tel"),
+                    rs.getString("usu_tel"),
                     rs.getInt("usu_admin"),
                     rs.getLong("usu_img"),
                     rs.getString("usu_cor"),
                     rs.getString("usu_pass")
             );
-            
+
             return usuarioLogin;
-        }  
+        }
         return null;
-        
+
     }
-    
+
 }
-      
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    
-
-
