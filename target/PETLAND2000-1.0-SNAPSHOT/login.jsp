@@ -84,7 +84,7 @@
         <div class="container-login-register">
 
 
-            <form action="" class="formulario_login">
+            <form method="post" action="SLoginInicio" class="formulario_login">
                 <h2>Iniciar Sesion</h2>
                 <input type="text" id="login_correo" placeholder="Correo Electronico">
                 <input type="password" id="login_contrasena" placeholder="Contrasena">

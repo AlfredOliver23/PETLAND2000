@@ -83,7 +83,7 @@
 <div class="muchos_perros">
 
     <div class="flechasdice_elloco">
-        <c:forEach var="p" items="${perros}">
+        <c:forEach var="p" items="${perrosLista}">
             <div class="columnas_cuerdas">
 
                 <div class="card">
@@ -97,7 +97,9 @@
                     <div class="card-footer">
                         <label>${p.perro_nombre}</label>
                         <div class="botones">
-                            <a href="">Conocelo</a>
+                            
+                        <a href="detallePerro.jsp?nombre=<c:out value="${p.per_nom}" />&id=<c:out value="${p.per_id}" />&raza=<c:out value="${p.cra_id}" />"><c:out value="${p.per_nom}" /></a>
+
                         </div>
                     </div>
                 </div>

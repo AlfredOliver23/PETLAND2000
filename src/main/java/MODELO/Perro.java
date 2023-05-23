@@ -3,17 +3,17 @@ import java.sql.Timestamp;
 public class Perro  extends Object {
     
   private int per_id;
-  private char per_nom;
+  private String per_nom;
   private  int cra_id;
   private int tpd_id;
   private Timestamp per_cum;
   private int  ref_id;
   private long per_img;
   private int orp_id;
-  private char per_des; 
+  private String per_des; 
   private boolean per_cumpliste;
 
-    public Perro(int per_id, char per_nom, int cra_id, int tpd_id, Timestamp per_cum, int ref_id, long per_img, int orp_id, char per_des, boolean per_cumpliste) {
+    public Perro(int per_id, String per_nom, int cra_id, int tpd_id, Timestamp per_cum, int ref_id, long per_img, int orp_id, String per_des, boolean per_cumpliste) {
         super();
         this.per_id = per_id;
         this.per_nom = per_nom;
@@ -27,7 +27,7 @@ public class Perro  extends Object {
         this.per_cumpliste = per_cumpliste;
     }
 
-    public Perro(int per_id, char per_nom, int cra_id, int tpd_id, Timestamp per_cum, int ref_id, long per_img, int orp_id, char per_des, boolean per_cumpliste, int id) {
+    public Perro(int per_id, String per_nom, int cra_id, int tpd_id, Timestamp per_cum, int ref_id, long per_img, int orp_id, String per_des, boolean per_cumpliste, int id) {
         super(id);
         this.per_id = per_id;
         this.per_nom = per_nom;
@@ -58,11 +58,11 @@ public class Perro  extends Object {
         this.per_id = per_id;
     }
 
-    public char getPer_nom() {
+    public String getPer_nom() {
         return per_nom;
     }
 
-    public void setPer_nom(char per_nom) {
+    public void setPer_nom(String per_nom) {
         this.per_nom = per_nom;
     }
 
@@ -114,11 +114,11 @@ public class Perro  extends Object {
         this.orp_id = orp_id;
     }
 
-    public char getPer_des() {
+    public String getPer_des() {
         return per_des;
     }
 
-    public void setPer_des(char per_des) {
+    public void setPer_des(String per_des) {
         this.per_des = per_des;
     }
 

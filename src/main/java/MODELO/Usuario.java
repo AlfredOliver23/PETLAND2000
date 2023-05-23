@@ -92,6 +92,11 @@ public class Usuario extends Object {
         this.cor = cor;
         this.pass = pass;
     }
+    public Usuario( String cor, String pass) {
+        super();
+        this.cor = cor;
+        this.pass = pass;
+    }
 
     public Usuario() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
