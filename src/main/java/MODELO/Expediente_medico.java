@@ -31,8 +31,5 @@ public class Expediente_medico extends Object {
     public void setPer_id(int per_id) {
         this.per_id = per_id;
     }
-    
-    
-    
- 
+
 }

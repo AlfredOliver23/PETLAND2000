@@ -1,5 +1,4 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +11,7 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Petland</a>
+        <a class="navbar-brand" href="landing.html">Petland</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,7 +21,7 @@
                     <a class="nav-link active" aria-current="page" href="index.jsp">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Controlador?accion=home">Adopta</a>
+                    <a class="nav-link" href="repertorio.jsp">Adopta</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="login.jsp" role="button"  aria-current="page" >
@@ -31,13 +30,10 @@
 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Link</a>
+                    <a class="nav-link active" href="informacion.html">Informacion</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -58,35 +54,51 @@
     <img src="./Imagenes/man.png" id="man" alt="">
 
 </section>
-<!--claramente puede ser asi o no el index, ya se vera mi loco-->
-<div class="muchos_perros">
+    <section>
+    
+        <h2>Este es nuestro proceso de adopcion</h2>
+    <div class="step">
+            <h2>Paso 1: Registro de Datos</h2>
+            <p>Para iniciar el proceso de adopción, primero debes registrar tus datos personales en el formulario de
+                registro. Proporciona tu nombre, dirección y número de teléfono.</p>
+            <a href="#registroForm">Registrar</a>
+        </div>
 
-    <div class="flechasdice_elloco">
-        <c:forEach var="p" items="${perros}">
-            <div class="columnas_cuerdas">
+        <div class="step">
+            <h2>Paso 2: Perros Disponibles</h2>
+            <p>Una vez registrado, podrás ver la lista de perros disponibles para adopción. Explora las opciones y
+                elige el perro que más te guste.</p>
+            <a href="#perrosDisponibles">Ver Perros Disponibles</a>
+        </div>
 
-                <div class="card">
-                    <div class="card-header">
-                        <label>${p.catatipo_perro}</label>
-                    </div>
-                    <div class="card-body">
-                        <i>${p.perro_cumplea}</i>
-                        <img src="Imagenes/perros/ControladorIMG?id=${p.perro_id}" alt="imagen de perro aki" width="200" height="180">
-                    </div>
-                    <div class="card-footer">
-                        <label>${p.perro_nombre}</label>
-                        <div class="botones">
-                            <a href="">Conocelo</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="step">
+            <h2>Paso 3: Test de Perrunidad</h2>
+            <p>Antes de adoptar, puedes realizar un test llamado "test de perrunidad" para evaluar tu compatibilidad con
+                el perro seleccionado. Este test te ayudará a tomar una decisión informada.</p>
+            <a href="#testPerrunidad">Realizar Test de Perrunidad</a>
+        </div>
 
-            </div>
-        </c:forEach>
+        <div class="step">
+            <h2>Paso 4: Adopción Provisional</h2>
+            <p>Una vez hayas visualizado al perro de tu elección y estés listo para adoptarlo, podrás proceder con la
+                adopción provisional. Esta adopción no es definitiva, y serás puesto en una lista de espera.</p>
+            <a href="#adopcionProvisional">Adoptar</a>
+        </div>
 
-    </div>
+        <div class="step">
+            <h2>Paso 5: Seguimiento y Confirmación</h2>
+            <p>El refugio se pondrá en contacto contigo para verificar que cumples con los requisitos de adopción. Si
+                cumples con los requisitos, se te asignará oficialmente al perro.</p>
+        </div>
 
-</div>
+        <div class="step">
+            <h2>Paso 6: Actualización del Estado del Perro</h2>
+            <p>Después de un tiempo, se te pedirá que subas fotos del perro adoptado para que el refugio pueda verificar
+                su estado y bienestar.</p>
+        </div>
+    
+    </section>
+
 
 
 <footer>
@@ -153,6 +165,9 @@
             },
             x:500,
         })
+        
+
+    </script>
     </script>
     
     
