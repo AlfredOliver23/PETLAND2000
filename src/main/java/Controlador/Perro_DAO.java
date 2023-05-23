@@ -81,6 +81,10 @@ public class Perro_DAO {
 
     }
 
+    Perro_DAO() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     
     public List<Perro> getAll() throws Exception {
         List<Perro> perrosLista = new ArrayList<>();
