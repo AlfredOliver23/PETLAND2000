@@ -92,7 +92,7 @@
             </form>
 
             
-            <form action="" class="formulario_register">
+            <form method="post" action="CLoginControl" class="formulario_register">
                 <h2>Registrarse</h2>
                 <input type="text" id="rfc" placeholder="RFC">                
                 <input type="text" id="nombre" placeholder="Nombres">
@@ -102,7 +102,7 @@
                 <input type="text" id="correo" placeholder="Correo Electronico">
                 <input type="password" id="contrasena" placeholder="Contrasena">
                 <br> <br>
-                    <button type="submit">Registrarme</button>
+                    <button type="submit" value="guardar">Registrarme</button>
 </form> 
 
         </div>
