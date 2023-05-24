@@ -101,7 +101,7 @@ public class Perro_DAO {
                     rs.getInt("ref_id"),
                     rs.getLong("per_img"),
                     rs.getInt("orp_id"),
-                    rs.getString("per_des"),
+                    rs.getString("per_des")
             );
 
 

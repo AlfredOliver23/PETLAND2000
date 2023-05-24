@@ -103,18 +103,22 @@ public class SLoginInicio extends HttpServlet {
                 switch (admin) {
                     case 0:
                         redirectURL = "usuario.jsp";
+                        System.out.println("usu");
                         
                         break;
                     case 1:
                         redirectURL = "veterinario.jsp";
+                        System.out.println("veteri");
 
                         break;
                     case 2:
                         redirectURL = "admin.jsp";
+                        System.out.println("admin");
                         
                         break;
                     default:
                         redirectURL = "index.jsp";
+                        System.out.println("nosepudo");
                 }
                 
                 response.sendRedirect(redirectURL);

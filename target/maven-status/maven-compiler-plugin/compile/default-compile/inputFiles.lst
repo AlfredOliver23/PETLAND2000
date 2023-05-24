@@ -2,9 +2,11 @@ C:\Users\user\Desktop\PETLAND2000\src\main\java\Controlador\Usuario_DAO.java
 C:\Users\user\Desktop\PETLAND2000\src\main\java\Controlador\CONEXION_BD.java
 C:\Users\user\Desktop\PETLAND2000\src\main\java\MODELO\Consultas.java
 C:\Users\user\Desktop\PETLAND2000\src\main\java\MODELO\Lista_espera.java
+C:\Users\user\Desktop\PETLAND2000\src\main\java\Controlador\SListarPerro.java
 C:\Users\user\Desktop\PETLAND2000\src\main\java\MODELO\Seguimiento_perro.java
 C:\Users\user\Desktop\PETLAND2000\src\main\java\MODELO\Tipo_de_perro.java
 C:\Users\user\Desktop\PETLAND2000\src\main\java\MODELO\Usuario.java
+C:\Users\user\Desktop\PETLAND2000\src\main\java\Controlador\SLoginInicio.java
 C:\Users\user\Desktop\PETLAND2000\src\main\java\MODELO\Domicilio.java
 C:\Users\user\Desktop\PETLAND2000\src\main\java\MODELO\Cata_razas.java
 C:\Users\user\Desktop\PETLAND2000\src\main\java\MODELO\Perro.java
@@ -14,3 +16,4 @@ C:\Users\user\Desktop\PETLAND2000\src\main\java\MODELO\Object.java
 C:\Users\user\Desktop\PETLAND2000\src\main\java\MODELO\Refugio.java
 C:\Users\user\Desktop\PETLAND2000\src\main\java\MODELO\Adopciones_previas.java
 C:\Users\user\Desktop\PETLAND2000\src\main\java\MODELO\Origen_perro.java
+C:\Users\user\Desktop\PETLAND2000\src\main\java\Controlador\Perro_DAO.java

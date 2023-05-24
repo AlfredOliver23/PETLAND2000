@@ -86,8 +86,9 @@
 
             <form method="post" action="SLoginInicio" class="formulario_login">
                 <h2>Iniciar Sesion</h2>
-                <input type="text" id="login_correo" placeholder="Correo Electronico">
-                <input type="password" id="login_contrasena" placeholder="Contrasena">
+                <input type="text" id="login_correo" name="login_correo" placeholder="Correo Electrónico">
+                <input type="password" id="login_contrasena" name="login_contrasena" placeholder="Contraseña">
+
                 <button type="submit">Entrar</button>
             </form>
 
@@ -100,7 +101,8 @@
                 <input type="text" id="apellidoMaterno" placeholder="Apellido Materno">
                 <input type="number" id="telefono" placeholder="Telefono">
                 <input type="text" id="correo" placeholder="Correo Electronico">
-                <input type="password" id="contrasena" placeholder="Contrasena">
+                <input type="password" id="contrasena" placeholder="Contrasena ">
+                <label>(8caracteres un numero una M y m y un $)</label>
                 <br> <br>
                     <button type="submit" value="guardar">Registrarme</button>
 </form> 
@@ -122,12 +124,10 @@
     <p class="copy">&copy; 2023 Petland. Todos los derechos reservados</p>
 </footer>
 
-<script src="./js/verilogin.js"></script>
+<!--<script src="./js/verilogin.js"></script><!-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 
 </body>
 </html>
 
-
-<!--Necista validacion-->

@@ -12,6 +12,10 @@
         <servlet-name>SListarPerro</servlet-name>
         <servlet-class>Controlador.SListarPerro</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ControladorLPerroLogin</servlet-name>
+        <servlet-class>Controlador.ControladorLPerroLogin</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SLoginControl</servlet-name>
         <url-pattern>/SLoginControl</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>SListarPerro</servlet-name>
         <url-pattern>/SListarPerro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControladorLPerroLogin</servlet-name>
+        <url-pattern>/ControladorLPerroLogin</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

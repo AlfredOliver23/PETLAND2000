@@ -27,7 +27,7 @@
                     <a class="nav-link active" aria-current="page" href="index.jsp">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Controlador?accion=home">Adopta</a>
+                    <a class="nav-link" href="SListarPerro?accion=home">Adopta</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="login.jsp" role="button"  aria-current="page" >
