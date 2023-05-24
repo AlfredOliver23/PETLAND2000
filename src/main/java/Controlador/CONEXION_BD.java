@@ -14,7 +14,7 @@ public class CONEXION_BD {
     
         if(conexion == null){
             try{
-                String url = context.getInitParameter("http//localhost:3306/petland"); 
+                String url = context.getInitParameter("http//localhost:3306/newpetland"); 
                 String user = context.getInitParameter("root");
                 String password = context.getInitParameter("batiziano2023");
                 Class.forName("con.mysql.cj.jdbc.Driver");

@@ -102,7 +102,6 @@ public class Perro_DAO {
                     rs.getLong("per_img"),
                     rs.getInt("orp_id"),
                     rs.getString("per_des"),
-                    rs.getBoolean("per_cumpliste")
             );
 
 
