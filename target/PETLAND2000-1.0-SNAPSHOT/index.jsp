@@ -35,7 +35,7 @@
             </ul>
             
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Responsividad</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -54,7 +54,7 @@
     <img src="./Imagenes/man.png" id="man" alt="">
 
 </section>
-    <section>
+    <section class="descripcion">
     
         <h2>Este es nuestro proceso de adopcion</h2>
     <div class="step">

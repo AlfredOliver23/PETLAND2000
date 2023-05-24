@@ -19,6 +19,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author user
  */
+
 public class SLoginInicio extends HttpServlet {
     
     private Usuario_DAO usuarioDAO;
@@ -106,7 +107,7 @@ public class SLoginInicio extends HttpServlet {
                         break;
                     case 1:
                         redirectURL = "veterinario.jsp";
-                        
+
                         break;
                     case 2:
                         redirectURL = "admin.jsp";

@@ -3,7 +3,7 @@ body{
     min-height: 100vh;
     scroll-behavior: smooth;
 }
-section{
+section .descripcion{
     position:relative;
     background-color: red;
 }
