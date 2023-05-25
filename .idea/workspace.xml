@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fefd7700-d3c7-423c-ae6c-147583b92bc2" name="Changes" comment="" />
+    <list default="true" id="fefd7700-d3c7-423c-ae6c-147583b92bc2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/Controlador/SLoginControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/Controlador/SLoginControl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/Controlador/Usuario_DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/Controlador/Usuario_DAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controlador/CONEXION_BD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controlador/CONEXION_BD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controlador/Perro_DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controlador/Perro_DAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controlador/SListarPerro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controlador/SListarPerro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controlador/Usuario_DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controlador/Usuario_DAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Adopciones_previas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Adopciones_previas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Cata_razas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Cata_razas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Consultas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Consultas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Domicilio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Domicilio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Expediente_medico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Expediente_medico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Lista_espera.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Lista_espera.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Object.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Object.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Origen_perro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Origen_perro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Perro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Perro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Refugio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Refugio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Seguimiento_perro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Seguimiento_perro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Tipo_de_perro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Tipo_de_perro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Usuario.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,11 +36,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -36,9 +56,20 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="ProjectId" id="2QIh5iE8SMvb2zIBFiewRSXjuV1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)"
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
@@ -54,8 +85,20 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fefd7700-d3c7-423c-ae6c-147583b92bc2" name="Changes" comment="" />
+      <created>1685046829915</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685046829915</updated>
+      <workItem from="1685046910638" duration="608000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -1,5 +1,4 @@
 package MODELO;
-
 public class Usuario extends Object {
    private int id;
    private String RFC;
@@ -12,8 +11,6 @@ public class Usuario extends Object {
    private long img;
    private String cor;
    private String pass;
-   
-   
 
     public Usuario(int id, String RFC, String nombre, String apapt, String apmat, int dom_id, String tel, int admin, long img, String cor, String pass) {
         super(id);
@@ -190,5 +187,4 @@ public class Usuario extends Object {
     public void setPass(String pass) {
         this.pass = pass;
     }
-
 }

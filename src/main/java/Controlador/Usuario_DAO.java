@@ -1,5 +1,4 @@
 package Controlador;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -63,9 +62,7 @@ public class Usuario_DAO {
 
             System.out.println("Error " + e.getMessage());
         }
-
     }
-
     /**
      * Eson se creo
      *
@@ -110,11 +107,8 @@ public class Usuario_DAO {
             this.updateStatement.executeUpdate();
 
             return usuario;
-
         }
-
     }
-
     public List<Usuario> getAll() throws Exception {
         List<Usuario> usuarioLista = new ArrayList<>();
 
@@ -134,7 +128,6 @@ public class Usuario_DAO {
                     rs.getString("usu_cor"),
                     rs.getString("usu_pass")
             );
-
             usuarioLista.add(usuario);
         }
         return usuarioLista;
@@ -163,7 +156,6 @@ public class Usuario_DAO {
             return usuario;
         }
         return null;
-
     }
     //metodo para borrar
 
@@ -199,11 +191,8 @@ public class Usuario_DAO {
                     rs.getString("usu_cor"),
                     rs.getString("usu_pass")
             );
-
             return usuarioLogin;
         }
         return null;
-
     }
-
 }

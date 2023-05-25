@@ -25,9 +25,7 @@ public class CONEXION_BD {
             }catch(SQLException | ClassNotFoundException ex  ){
              
                 System.out.println("No se encontro la Base de Datos");
-                System.out.println("Error: " + ex.getMessage());
-                
-                
+                System.out.println("Error: " + ex.getMessage());  
             }
      }
         return conexion; 
