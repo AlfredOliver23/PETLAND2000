@@ -1,4 +1,4 @@
-package Controlador;
+package Data_acces_BD;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -68,13 +68,15 @@ public class Usuario_DAO {
      *
      * @param conexion
      */
-    Usuario_DAO(Connection conexion) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    
 
     public Usuario save(Usuario usuario) throws Exception {
 
         if (usuario.getId() == -1) {
+            System.out.println("Esto paso1");
+            /**
+             * 
+             */
             this.insertStatement.setString(1, usuario.getRFC());
             this.insertStatement.setString(2, usuario.getNombre());
             this.insertStatement.setString(3, usuario.getApapt());
@@ -93,6 +95,7 @@ public class Usuario_DAO {
             return usuario;
 
         } else {
+            System.out.println("Esto paso2");
             //actualizar
             this.insertStatement.setString(1, usuario.getRFC());
             this.insertStatement.setString(2, usuario.getNombre());

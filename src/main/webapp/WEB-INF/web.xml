@@ -16,21 +16,29 @@
         <servlet-name>ControladorLPerroLogin</servlet-name>
         <servlet-class>Controlador.ControladorLPerroLogin</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SLogin</servlet-name>
+        <servlet-class>Controlador.SLogin</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SLoginControl</servlet-name>
         <url-pattern>/SLoginControl</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SLoginInicio</servlet-name>
-        <url-pattern>/SLoginInicio</url-pattern>
+        <url-pattern>\webapp\SLoginInicio</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SListarPerro</servlet-name>
-        <url-pattern>/SListarPerro</url-pattern>
+        <url-pattern>SListarPerro</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ControladorLPerroLogin</servlet-name>
         <url-pattern>/ControladorLPerroLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SLogin</servlet-name>
+        <url-pattern>/SLogin</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

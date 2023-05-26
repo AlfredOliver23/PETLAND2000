@@ -1,16 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="PETLAND2000:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fefd7700-d3c7-423c-ae6c-147583b92bc2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/Controlador/SLoginControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/Controlador/SLoginControl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/Controlador/Usuario_DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/Controlador/Usuario_DAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controlador/CONEXION_BD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controlador/CONEXION_BD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controlador/Perro_DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controlador/Perro_DAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controlador/SListarPerro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controlador/SListarPerro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controlador/Usuario_DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controlador/Usuario_DAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/CONEXION_BD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data_acces_BD/CONEXION_BD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/Perro_DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data_acces_BD/Perro_DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SListarPerro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SLoginControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SLoginInicio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/Usuario_DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data_acces_BD/Usuario_DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MODELO/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MODELO/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/usuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/usuario.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Adopciones_previas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Adopciones_previas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Cata_razas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Cata_razas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Consultas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Consultas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Domicilio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Domicilio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Expediente_medico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Expediente_medico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Lista_espera.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Lista_espera.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Object.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Object.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Origen_perro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Origen_perro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Perro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Perro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Refugio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Refugio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Seguimiento_perro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Seguimiento_perro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Tipo_de_perro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Tipo_de_perro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/classes/MODELO/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/usuario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/PETLAND2000-1.0-SNAPSHOT/usuario.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controlador/CONEXION_BD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controlador/Perro_DAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controlador/SListarPerro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controlador/SLoginControl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controlador/SLoginInicio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controlador/Usuario_DAO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Adopciones_previas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Adopciones_previas.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Cata_razas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Cata_razas.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Consultas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Consultas.class" afterDir="false" />
@@ -24,6 +57,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Seguimiento_perro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Seguimiento_perro.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Tipo_de_perro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Tipo_de_perro.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MODELO/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MODELO/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/.netbeans_automatic_build" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,12 +100,19 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/user/Desktop/PETLAND2000/src/main/webapp/WEB-INF",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\PETLAND2000\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -84,6 +125,89 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tomcat 9.0.732" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.732" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="16" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="18c0b484-5e9f-4b18-8405-9717700e8696" />
+        <option name="HTTP_PORT" value="8082" />
+        <option name="JNDI_PORT" value="1092" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57033" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="PETLAND2000:war exploded" />
+        </option>
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -94,6 +218,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685046829915</updated>
       <workItem from="1685046910638" duration="608000" />
+      <workItem from="1685065230303" duration="796000" />
     </task>
     <servers />
   </component>
@@ -110,5 +235,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

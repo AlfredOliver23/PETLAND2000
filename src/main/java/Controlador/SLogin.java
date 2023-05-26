@@ -3,32 +3,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
 package Controlador;
-
+import MODELO.Usuario;
+import Data_acces_BD.CONEXION_BD;
+import Data_acces_BD.Usuario_DAO;
 import MODELO.Usuario;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
-import java.sql.SQLException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author user
  */
-
-public class SLoginInicio extends HttpServlet {
-    
-    private Usuario_DAO usuarioDAO;
-    
-    public void init() {
-        Connection connection = CONEXION_BD.getConnection(getServletContext());
-        usuarioDAO = new Usuario_DAO(connection);
-    }
-    
+public class SLogin extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -44,15 +35,34 @@ public class SLoginInicio extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet SLoginInicio</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet SLoginInicio at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+            
+            //instanciar conexxion
+            Connection con = CONEXION_BD.getConnection(request.getServletContext());
+            
+            //Que instanciar a usuario con suspersmisos
+            
+            Usuario_DAO usuariODAO = new Usuario_DAO(con, request.getServletContext());
+            //usar los metodos que tinee ususario dao que debe ser usuario
+            
+            Usuario usuario = new Usuario(
+                    //request.getParameter("formregistro"),
+                    request.getParameter("rfc"),
+                    request.getParameter("nombre"),
+                    request.getParameter("apellidoPaterno"),
+                    request.getParameter("apellidomaterno"),
+                    request.getParameter("telefono"),
+                    request.getParameter("correo"), 
+                    request.getParameter("contrasena")
+            );
+            
+            try {
+                usuario =usuariODAO.save(usuario);
+                System.out.println("Usuario agregado cock");
+                response.sendRedirect("usuario.jsp");
+            } catch (Exception e) {
+                System.out.println("error al agregar nimdoo : " +e.getMessage());
+                response.sendRedirect("login.jsp");
+            }
         }
     }
 
@@ -82,54 +92,7 @@ public class SLoginInicio extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        String username = request.getParameter("login_correo");
-        String password = request.getParameter("login_contrasena");
-        
-        try {
-            Usuario usuario = new Usuario();
-            usuario.setCor(username);
-            usuario.setPass(password);
-            
-            Usuario usuarioLogin = usuarioDAO.login(usuario);
-            
-            if (usuarioLogin != null) {
-                HttpSession session = request.getSession();
-                session.setAttribute("usuario", usuarioLogin);
-                
-                int admin = usuarioLogin.getAdmin();
-                String redirectURL;
-                
-                switch (admin) {
-                    case 0:
-                        redirectURL = "usuario.jsp";
-                        System.out.println("usu");
-                        
-                        break;
-                    case 1:
-                        redirectURL = "veterinario.jsp";
-                        System.out.println("veteri");
-
-                        break;
-                    case 2:
-                        redirectURL = "admin.jsp";
-                        System.out.println("admin");
-                        
-                        break;
-                    default:
-                        redirectURL = "index.jsp";
-                        System.out.println("nosepudo");
-                }
-                
-                response.sendRedirect(redirectURL);
-                
-            }else{
-                response.sendRedirect("error.jsp");
-            }
-        } catch (SQLException ex) {
-            System.out.println("error" + ex.getMessage());
-        }
-        
+        processRequest(request, response);
     }
 
     /**
